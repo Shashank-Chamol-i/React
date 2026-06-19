@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    font-family: Arial, sans-serif;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.clock{
+  color:white;
+  font-size:70px;
+  padding:30px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background : rgba(255,255,255,0.15);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h3{
+  color:white;
+  margin-top : 20px;
+  font-size :25px;
+}

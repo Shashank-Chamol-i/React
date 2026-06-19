@@ -1,0 +1,39 @@
+body{
+  margin : 0;
+  padding : 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.quote-card{
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+  margin-bottom:20px;
+}
+
+button{
+  background: royalblue;
+  color:white;
+  border:none;
+  padding : 12px 20px;
+  cursor:pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button:hover{
+  background: darkblue;
+}
