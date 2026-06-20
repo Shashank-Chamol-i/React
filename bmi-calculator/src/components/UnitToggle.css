@@ -1,0 +1,18 @@
+.unit-toggle{
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.unit-toggle-label{
+  font-size:0.75rem;
+  font-weight: 700;
+  color:#64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.unit-toggle-buttons{
+  display: flex;
+  gap:8px;
+}
+
