@@ -15,4 +15,38 @@
   display: flex;
   gap:8px;
 }
+.unit-toggle-btn{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2px;
+  padding: 10px 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #f8fafc;
+  border:2px solid #e2e8f0;
+  border-radius:12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.unit-toggle-btn:hover{
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.unit-toggle-active-btn{
+  background: #eef2ff;
+  border-color: #6366f1;
+  color:#4338ca;
+}
+
+.unit-toggle-sub{
+  font-size: 0.68rem;
+  font-weight: 500;
+  opacity: 0.65;
+  letter-spacing: 0.03em;
+}
 
