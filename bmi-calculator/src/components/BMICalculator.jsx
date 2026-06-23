@@ -22,7 +22,7 @@ function BMICalculator() {
     handleCalculate, handleReset,
   } = useBMI();
 
-  // Unit labels change based on selected system
+  
   const unitLabels = unit === "metric"
     ? { h: "cm",  w: "kg",  hPH: "e.g. 170", wPH: "e.g. 70"  }
     : { h: "in",  w: "lbs", hPH: "e.g. 67",  wPH: "e.g. 155" };
@@ -31,18 +31,17 @@ function BMICalculator() {
     <div className="bmi-calc">
       <div className="bmi-calc__card">
 
-        {/* ── Header ── */}
+        
         <header className="bmi-calc__header">
           <span className="bmi-calc__logo">⚖️</span>
           <h1 className="bmi-calc__title">BMI Calculator</h1>
           <p className="bmi-calc__subtitle">WHO Standard · Body Mass Index</p>
         </header>
 
-        {/* ── Unit Toggle ── */}
+        
         <UnitToggle unit={unit} onUnitChange={setUnit} />
 
-        {/* ── Inputs ── */}
-        {/* 🔑 Controlled inputs: value from state, onChange updates state */}
+        
         <div className="bmi-calc__inputs">
           <InputField
             label="Height" icon="📏"
@@ -60,10 +59,8 @@ function BMICalculator() {
           />
         </div>
 
-        {/* ── Action Buttons ── */}
+        
         <div className="bmi-calc__actions">
-          {/* 🔑 Event handling: onClick reference (not a call) */}
-          {/* 🔑 disabled prop: React 19 passes it directly to DOM */}
           <button
             type="button"
             className="bmi-calc__btn bmi-calc__btn--primary"
@@ -73,7 +70,6 @@ function BMICalculator() {
             Calculate BMI
           </button>
 
-          {/* 🔑 Conditional rendering: logical AND — show only after result */}
           {hasCalculated && (
             <button
               type="button"
@@ -85,8 +81,7 @@ function BMICalculator() {
           )}
         </div>
 
-        {/* ── Results ── */}
-        {/* 🔑 Conditional rendering: ternary — result vs empty state */}
+        
         {hasCalculated ? (
           <div className="bmi-calc__results">
             <BMIGauge bmi={bmi} category={category} />
@@ -98,7 +93,7 @@ function BMICalculator() {
           </p>
         )}
 
-        {/* ── Reference Table ── */}
+        
         <div className="bmi-calc__reference">
           <p className="bmi-calc__ref-title">BMI Reference (WHO)</p>
           {REFERENCE.map((row) => (
