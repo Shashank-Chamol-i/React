@@ -1,0 +1,68 @@
+.gauge{
+  display :flex;
+  flex-direction: column;
+  align-items: center;
+  gap:7px;
+}
+
+.gauge-track{
+  position:relative;
+  display:flex;
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: visible;
+}
+.gauge-zone{
+  flex:1;
+  height: 100%;
+}
+.gauge-zone:first-child{
+  border-radius: 999px , 0 , 0 , 999px;
+}
+.gauge-zone:last-child{
+  border-radius: 0 999px , 999px , 0;
+}
+.gauge-needle{
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border:3px solid #01f72a;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0 , 0 , 0 , 0.2);
+  z-index: 2;
+  transition: left 0.55s cubic-bezier(0.34, 1.56 , 0.64 , 1);
+}
+.gauge-zone-label{
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+.gauge-number{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6px;
+  transition: color 0.35s;
+}
+
+.gauge-value{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.guage-unit-label{
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+  margin-top:2px;
+}

@@ -2,7 +2,7 @@ export function  calculateBMI(weightKg , heightCm) {
   if(!heightCm || !weightKg || heightCm<=0 || weightKg<=0 ) return null;
 
   const heightM = heightCm/100;
-  const bmi = weightKg / (heightM * heightCm)
+  const bmi = weightKg / (heightM * heightM)
   return parseFloat(bmi.toFixed(1));
 }
 
@@ -51,9 +51,9 @@ export function getBMICategory(bmi){
     bgColor: "#fef2f2",
     borderColor: "#fecaca",
   };
-  export function getBMIPercent(bmi){
+}
+export function getBMIPercent(bmi){
     if(!bmi) return 0;
     const pct = ((bmi - 10)/30)*100;
     return Math.min(100,Math.max(0,pct));
   }
-}

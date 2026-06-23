@@ -1,6 +1,7 @@
 import "./UnitToggle.css";
 function UnitToggle({unit,onUnitChange}) {
-  <div className="unit-toggle">
+  return(
+    <div className="unit-toggle">
     <p className="unit-toggle-label">Unit System</p>
     <div className="unit-toggle-buttons">
       
@@ -19,6 +20,7 @@ function UnitToggle({unit,onUnitChange}) {
     
     </div>
   </div>
+  );
 }
 
 export default UnitToggle;

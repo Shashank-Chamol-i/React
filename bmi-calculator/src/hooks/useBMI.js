@@ -1,12 +1,11 @@
 import { useState } from "react";
-import {weightKg, heightCm} from "..utils/bmiUtils.js";
 import { calculateBMI, getBMICategory } from "../utils/bmiUtils";
 
 export function useBMI(){
   const[height , setHeight] = useState("");
   const[weight , setWeight] = useState("");
-  const[unit ,  setUnit] = useState("metrics");
-  cosnt[bmi ,  setBmi] = useState(null);
+  const[unit ,  setUnit] = useState("metric");
+  const[bmi ,  setBmi] = useState(null);
   const[category , setCategory] = useState(null);
   const[hasCalculated , setHasCalculated] = useState(false);
 
@@ -43,7 +42,7 @@ function handleReset() {
 
   return{
       height,weight,unit, bmi , category, hasCalculated,isValid,setHeight,setWeight,setUnit,
-      handleCalculate,HandleReset
+      handleCalculate,handleReset
   };
 
 }
