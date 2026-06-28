@@ -1,0 +1,62 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+.page.morning {
+  background: linear-gradient(135deg, #ffd166, #ffb703);
+}
+
+.page.afternoon {
+  background: linear-gradient(135deg, #8ecae6, #219ebc);
+}
+
+.page.evening {
+  background: linear-gradient(135deg, #ff7b54, #ffb347);
+}
+
+.page.night {
+  background: linear-gradient(135deg, #1d3557, #0f172a);
+  color: #f8fafc;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.page.night .card {
+  background: rgba(15, 23, 42, 0.85);
+  color: #f8fafc;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.time {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sub-message {
+  margin: 0;
+  opacity: 0.8;
+}
